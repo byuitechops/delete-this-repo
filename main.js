@@ -19,8 +19,10 @@ module.exports = (course, stepCallback) => {
     course.message('message');
 
 
-    // 1. use course.contents to get all quiz XML files (filter on course name: quiz_d2l_###.xml)
-    // 2. use cheerio dom (file.dom) to pull instructions into description
+    // 1. use course.contents to get all quiz XML files 
+    // 2, filter on course name: quiz_d2l_###.xml
+    // 3. use cheerio dom (file.dom) to pull instructions into description
+        // a. <d2l_2p0:intro_message> contains the instructions
 
 
     /* How to report a warning */
